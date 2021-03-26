@@ -48,6 +48,12 @@ import { FruittopbarComponent } from './components/fruittopbar/fruittopbar.compo
 import { Component, Inject} from '@angular/core';
 import { FruitcartComponent } from './components/fruitcart/fruitcart.component';
 import { PagoComponent } from './components/pago/pago.component';
+import { TopbarComponent } from './components/topbar/topbar.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { CompanyComponent } from './components/company/company.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { HomeComponent } from './components/home/home.component';
+import { ProjectsComponent } from './components/projects/projects.component';
 
 @NgModule({
   declarations: [
@@ -61,6 +67,12 @@ import { PagoComponent } from './components/pago/pago.component';
     FruittopbarComponent,
     FruitcartComponent,
     PagoComponent,
+    TopbarComponent,
+    FooterComponent,
+    CompanyComponent,
+    ContactComponent,
+    HomeComponent,
+    ProjectsComponent,
   ],
   imports: [
     BrowserModule,

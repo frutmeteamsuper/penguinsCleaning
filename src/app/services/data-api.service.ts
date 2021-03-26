@@ -70,7 +70,7 @@ export class DataApiService {
 		.pipe(map(data => data));
 	}
 	sendMailNewBookAppToAdmin(book){
-		const url_api='https://db.andesproadventures.com:3006/newBookAppToAdmin';
+		const url_api='https://email.penguinscleaning.ca:3005/newBookAppToAdmin';
 		return this.http
 		.post(url_api, book)
 		.pipe(map(data => data));

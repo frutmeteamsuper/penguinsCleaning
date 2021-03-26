@@ -5,5 +5,8 @@ export { FruitbannerComponent } from "./fruitbanner/fruitbanner.component";
 export { FruitcestaComponent } from "./fruitcesta/fruitcesta.component";
 export { FruitfooterComponent } from "./fruitfooter/fruitfooter.component";
 export { FruittopbarComponent } from "./fruittopbar/fruittopbar.component";
+export { TopbarComponent } from "./topbar/topbar.component";
+export { FooterComponent } from "./footer/footer.component";
+export { CompanyComponent } from "./company/company.component";
 export { FruitcartComponent } from "./fruitcart/fruitcart.component";
 export { PagoComponent } from "./pago/pago.component";

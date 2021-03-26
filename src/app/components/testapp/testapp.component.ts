@@ -3,6 +3,9 @@ import { UserWService } from "../../services/user-w.service";
 import { TixInterface } from '../../models/tix-interface';
 import { DataApiService } from '../../services/data-api.service';
 import { ScrollTopService }  from '../../services/scroll-top.service';
+import { Location } from '@angular/common';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-testapp',
@@ -12,11 +15,12 @@ import { ScrollTopService }  from '../../services/scroll-top.service';
 export class TestappComponent implements OnInit {
 
   constructor(
+     public location: Location,
+    public router: Router,
   public scrollTopService:ScrollTopService,
    public _uw:UserWService,
   private dataApi: DataApiService
      ) { }
-
     loadAPI = null;  
 
   url = "assets/assetspenguins/js/owl.js";
@@ -129,6 +133,8 @@ cartCalculate(){
     node.charset = "utf-8";
     document.getElementsByTagName("head")[0].appendChild(node);
   }
+
+
   ngOnInit() {
       if (this._uw.loaded==true){
       this.loadAPI = new Promise(resolve => {
@@ -138,6 +144,7 @@ cartCalculate(){
         });
       }
     this._uw.loaded=true;
+   
      // this.getAllTixsInitload();
      this.getTamanoIni();
      this.loadmore();

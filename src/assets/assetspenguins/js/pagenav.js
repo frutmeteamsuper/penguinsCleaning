@@ -183,7 +183,7 @@
 
 			//If the position is set
 			if(position !== null) {
-				$parent = this.$elem.find('a[href$="#' + position + '"]').parent();
+				$parent = this.$elem.find('a[routerLink$="#' + position + '"]').parent();
 
 				//If it's not already the current section
 				if(!$parent.hasClass(this.config.currentClass)) {

@@ -1,12 +1,15 @@
 import {RouterModule,Routes} from '@angular/router';
 import {
 	TestappComponent,
+	FooterComponent,
 	FruitproductsComponent,
 	FruitbannerComponent,
+	CompanyComponent,
 	// FruitbannerboxComponent,
 	FruitcestaComponent,
 	FruitfooterComponent,
 	FruittopbarComponent,
+	TopbarComponent,
 	FruitcartComponent,
 	PagoComponent
 
@@ -16,6 +19,9 @@ import {
 
 const app_routes: Routes = [
 	{path:'',component:TestappComponent},
+	{path:'topbar',component:TopbarComponent},
+	{path:'footer',component:FooterComponent},
+	{path:'company',component:CompanyComponent},
 	{path:'fruittopbar',component:FruittopbarComponent},
 	{path:'fruitproducts',component:FruitproductsComponent},
 	{path:'fruitbanner',component:FruitbannerComponent},
